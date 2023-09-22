@@ -31,7 +31,7 @@ export default function Entry({ itemTeam }) {
           <p className="card-text"><strong>Quarterback:</strong> {itemTeam.quarterback}</p>
           <h6>Playoff Rounds Wins</h6>
           <ol>
-            {itemTeam.wins && itemTeam.round.map(
+            {itemTeam.wins && itemTeam.wins.map(
                 ({id, round}) => (
                   <li key={id}>
                     {round}
